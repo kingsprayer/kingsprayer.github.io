@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anuj Sharma — Full-Stack &amp; AI Automation Engineer</title>
+  <meta
+    name="description"
+    content="Portfolio of Anuj Sharma — Full-Stack & AI Automation Engineer building modern web apps, Python automation, local AI/CV workflows, and media processing pipelines."
+  />
+  <meta property="og:title" content="Anuj Sharma — Full-Stack & AI Automation Engineer" />
+  <meta
+    property="og:description"
+    content="Interactive portfolio, 1-page resume, and full CV showcasing full-stack web apps, Python automation, local AI/CV workflows, and media pipelines."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kingsprayer.github.io/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="theme-color" content="#1a1614" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1614'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23f6f2eb'%3EAS%3C/text%3E%3C/svg%3E"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/portfolio.css" />
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem("as-portfolio-theme");
+        if (saved === "dark" || (!saved && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.setAttribute("data-theme", "dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="page-backdrop">
+    <!-- ====================================================================
+         STICKY NAVIGATION
+         ==================================================================== -->
+    <header class="site-nav">
+      <div class="nav-inner">
+        <a href="#top" class="brand" aria-label="Anuj Sharma Home">
+          <span class="brand-monogram" aria-hidden="true">AS</span>
+          <span class="brand-meta">
+            <span class="brand-name">Anuj Sharma</span>
+            <span class="brand-sub">Full-Stack &amp; AI Automation</span>
+          </span>
+        </a>
+
+        <nav aria-label="Primary navigation">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#labs">Labs</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" class="icon-btn" id="openCmdkBtn" title="Quick jump (⌘K / Ctrl+K)" aria-label="Open command palette">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <span class="kbd-hint">⌘K</span>
+          </button>
+
+          <button type="button" class="icon-btn" id="themeToggleBtn" aria-label="Toggle dark mode" title="Switch light / dark theme">
+            <svg id="themeIconSun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            </svg>
+          </button>
+
+          <a href="resume.html" class="btn btn--outline btn--sm btn-cv-hide-xs">Resume</a>
+          <a href="cv.html" class="btn btn--primary btn--sm">Full CV</a>
+
+          <button type="button" class="icon-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- ==================================================================
+           HERO + INTERACTIVE ARCHITECTURE BLUEPRINT
+           ================================================================== -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div>
+              <div class="status-pill">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                <span>Jaipur, India · B.Tech CSE '26 · Full-Stack &amp; Automation</span>
+              </div>
+
+              <h1 class="hero-title">
+                Building <em>practical web apps</em>, backend automation &amp; applied AI tools.
+              </h1>
+
+              <p class="hero-lead">
+                I'm <strong>Anuj Sharma</strong>, a Computer Science graduate and software engineer comfortable working across the stack—from
+                TypeScript, Next.js, and PostgreSQL web platforms to Python FastAPI services, local Apple Silicon AI/CV workflows,
+                and audio/video automation pipelines.
+              </p>
+
+              <div class="hero-ctas">
+                <a href="#projects" class="btn btn--primary">Explore Projects ↓</a>
+                <a
+                  href="Anuj_Sharma_Resume_2026.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--accent"
+                >
+                  1-Page Resume PDF
+                </a>
+                <a href="cv.html" class="btn btn--outline">Read Full CV</a>
+                <a
+                  href="https://saadaa-b2b-catalog.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn--outline"
+                >
+                  Live B2B App ↗
+                </a>
+              </div>
+
+              <div class="hero-meta-strip">
+                <span>
+                  Email:
+                  <a href="mailto:anuj23012004@gmail.com" id="heroEmailCopy">anuj23012004@gmail.com</a>
+                </span>
+                <span>
+                  GitHub:
+                  <a href="https://github.com/kingsprayer" target="_blank" rel="noopener noreferrer">
+                    github.com/kingsprayer
+                  </a>
+                </span>
+                <span>
+                  LinkedIn:
+                  <a href="https://www.linkedin.com/in/anuj-sharma-7419562537" target="_blank" rel="noopener noreferrer">
+                    /in/anuj-sharma-7419562537
+                  </a>
+                </span>
+                <span>Phone: <a href="tel:+918302787915">+91 8302787915</a></span>
+              </div>
+            </div>
+
+            <!-- Interactive Systems Blueprint Widget -->
+            <aside class="blueprint-card" aria-label="Interactive architecture preview">
+              <div class="blueprint-head">
+                <div class="blueprint-dots" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </div>
+                <span>SYSTEM_ARCHITECTURE_EXPLORER · 4 TRACKS</span>
+              </div>
+
+              <div class="blueprint-tabs" role="tablist" aria-label="Architecture domains" id="blueprintTabs">
+                <button type="button" class="bp-tab is-active" role="tab" aria-selected="true" data-project-id="saadaa-b2b-catalog">
+                  01 Web
+                </button>
+                <button type="button" class="bp-tab" role="tab" aria-selected="false" data-project-id="local-ai-photo-studio">
+                  02 Local AI
+                </button>
+                <button type="button" class="bp-tab" role="tab" aria-selected="false" data-project-id="multilingual-dubbing">
+                  03 Media
+                </button>
+                <button type="button" class="bp-tab" role="tab" aria-selected="false" data-project-id="ops-automation-suite">
+                  04 Ops
+                </button>
+              </div>
+
+              <div class="blueprint-body" id="blueprintBody">
+                <!-- Populated dynamically from assets/data.js -->
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           4 VERSATILITY PILLARS STRIP
+           ================================================================== -->
+      <section class="metrics-band" aria-label="Core engineering versatility">
+        <div class="container">
+          <div class="metrics-grid" id="pillarsGrid">
+            <!-- Populated from assets/data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SELECTED ENGINEERING PROJECTS
+           ================================================================== -->
+      <section class="section" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">01 · Selected Work</p>
+              <h2 class="section-title" id="projects-heading">Engineering Projects &amp; Internal Tools</h2>
+              <p class="section-desc">
+                Practical systems built across web apps, local AI workflows, video processing, and operations automation.
+                Click any project to inspect its architecture flow and stack notes.
+              </p>
+            </div>
+
+            <div class="filter-bar" role="tablist" aria-label="Filter projects by domain" id="projectFilters">
+              <button type="button" class="filter-pill is-active" data-filter="all">All (6)</button>
+              <button type="button" class="filter-pill" data-filter="fullstack">Full-Stack Web</button>
+              <button type="button" class="filter-pill" data-filter="ai">Applied AI &amp; CV</button>
+              <button type="button" class="filter-pill" data-filter="media">Media Pipelines</button>
+              <button type="button" class="filter-pill" data-filter="ops">Automation</button>
+            </div>
+          </div>
+
+          <div class="projects-grid" id="projectsGrid">
+            <!-- Populated from assets/data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           WORK EXPERIENCE
+           ================================================================== -->
+      <section class="section" id="experience" aria-labelledby="experience-heading">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">02 · Work Experience</p>
+              <h2 class="section-title" id="experience-heading">Roles &amp; Hands-On Scope</h2>
+              <p class="section-desc">
+                End-to-end engineering work spanning customer-facing web portals, internal workflow software, AI/media tooling,
+                and automated QA.
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-stack" id="experienceList">
+            <!-- Populated from assets/data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           INTERACTIVE CAPABILITY MATRIX (SKILLS)
+           ================================================================== -->
+      <section class="section" id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">03 · Technical Toolkit</p>
+              <h2 class="section-title" id="skills-heading">Cross-Stack Capabilities</h2>
+              <p class="section-desc">
+                Search or click any technology to see which projects put it to work.
+              </p>
+            </div>
+
+            <div class="search-input-wrap">
+              <svg class="search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input
+                type="search"
+                id="skillSearchInput"
+                class="search-input"
+                placeholder="Filter skills (e.g. TypeScript, PyTorch, FFmpeg)..."
+                aria-label="Filter technical skills"
+              />
+            </div>
+          </div>
+
+          <div class="skill-match-banner" id="skillMatchBanner" role="status" aria-live="polite">
+            <div id="skillMatchText"></div>
+            <div class="skill-match-links" id="skillMatchLinks"></div>
+          </div>
+
+          <div class="skills-grid" id="skillsGrid">
+            <!-- Populated from assets/data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           SIDE PROJECTS & CREATIVE LABS + LIVE COLOR SCIENCE MICRO-LAB
+           ================================================================== -->
+      <section class="section" id="labs" aria-labelledby="labs-heading">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">04 · Exploration &amp; Labs</p>
+              <h2 class="section-title" id="labs-heading">Side Projects &amp; Creative Engineering</h2>
+              <p class="section-desc">
+                Smaller experiments spanning browser color science, Web Audio DSP, 3D WebGL scenes, internal data utilities,
+                and Apple Silicon C benchmarking.
+              </p>
+            </div>
+          </div>
+
+          <div class="labs-layout">
+            <div class="labs-grid" id="labsGrid">
+              <!-- Populated from assets/data.js -->
+            </div>
+
+            <!-- Interactive Color Contrast & CIE76 Delta-E Micro-Lab -->
+            <aside class="color-lab-widget" aria-label="Interactive WCAG contrast and Delta-E color checker">
+              <p class="widget-kicker">Interactive Micro-Lab · Color Science</p>
+              <h3 class="widget-title">WCAG &amp; Delta-E Inspector</h3>
+              <p class="widget-sub">
+                A live miniature inspired by my <strong>SpectraCraft</strong> and catalog color-calibration tooling—test WCAG
+                contrast ratios and perceptual CIE76 ΔE distance between any two colors.
+              </p>
+
+              <div class="color-preview-stage" id="colorPreviewStage">
+                <p class="color-preview-heading">Readable editorial contrast</p>
+                <p class="color-preview-copy">Live foreground &amp; surface contrast preview for UI accessibility.</p>
+              </div>
+
+              <div class="color-pickers">
+                <label class="picker-box">
+                  <input type="color" id="fgColorPicker" value="#1a1614" aria-label="Foreground ink color" />
+                  <span class="picker-meta">
+                    <span class="picker-label">Ink / FG</span>
+                    <span class="picker-hex" id="fgHexLabel">#1A1614</span>
+                  </span>
+                </label>
+
+                <label class="picker-box">
+                  <input type="color" id="bgColorPicker" value="#f6f2eb" aria-label="Background surface color" />
+                  <span class="picker-meta">
+                    <span class="picker-label">Surface / BG</span>
+                    <span class="picker-hex" id="bgHexLabel">#F6F2EB</span>
+                  </span>
+                </label>
+              </div>
+
+              <div class="color-readouts">
+                <div class="readout-tile">
+                  <div class="readout-label">WCAG Contrast</div>
+                  <div class="readout-val" id="contrastRatioVal">16.3 : 1</div>
+                </div>
+                <div class="readout-tile">
+                  <div class="readout-label">CIE76 ΔE Dist</div>
+                  <div class="readout-val" id="deltaEVal">87.4</div>
+                </div>
+              </div>
+
+              <div class="wcag-badges" id="wcagBadges">
+                <!-- Populated dynamically -->
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           EDUCATION & CERTIFICATIONS
+           ================================================================== -->
+      <section class="section" id="education" aria-labelledby="edu-heading">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">05 · Background</p>
+              <h2 class="section-title" id="edu-heading">Education &amp; Certifications</h2>
+            </div>
+          </div>
+
+          <div class="edu-grid" id="educationSection">
+            <!-- Populated from assets/data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================================================================
+           CONTACT & DOCUMENT HANDOFF
+           ================================================================== -->
+      <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <div class="contact-band">
+            <div>
+              <p class="eyebrow">06 · Get in Touch</p>
+              <h2 class="contact-title" id="contact-heading">
+                Looking for a versatile full-stack &amp; automation engineer?
+              </h2>
+              <p class="contact-copy">
+                I'm based in Jaipur and open to software engineering, full-stack, and applied AI automation roles. Feel free to
+                grab my concise 1-page resume, browse the full 2-page CV, or send a note directly.
+              </p>
+
+              <div class="hero-ctas" style="margin-bottom: 0;">
+                <button type="button" class="btn btn--primary" id="copyEmailFooterBtn">Copy Email</button>
+                <a href="Anuj_Sharma_Resume_2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--accent">
+                  1-Page Resume PDF
+                </a>
+                <a href="Anuj_Sharma_CV_2026.pdf" target="_blank" rel="noopener noreferrer" class="btn btn--outline">
+                  2-Page Full CV PDF
+                </a>
+                <a href="Anuj_Sharma_CV.md" download="Anuj_Sharma_CV.md" class="btn btn--outline">
+                  Markdown CV
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-links-card">
+              <div class="contact-row">
+                <span class="contact-row-label">Email</span>
+                <a class="contact-row-val" href="mailto:anuj23012004@gmail.com">anuj23012004@gmail.com</a>
+              </div>
+              <div class="contact-row">
+                <span class="contact-row-label">Phone</span>
+                <a class="contact-row-val" href="tel:+918302787915">+91 8302787915</a>
+              </div>
+              <div class="contact-row">
+                <span class="contact-row-label">GitHub</span>
+                <a
+                  class="contact-row-val"
+                  href="https://github.com/kingsprayer"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/kingsprayer ↗
+                </a>
+              </div>
+              <div class="contact-row">
+                <span class="contact-row-label">LinkedIn</span>
+                <a
+                  class="contact-row-val"
+                  href="https://www.linkedin.com/in/anuj-sharma-7419562537"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  linkedin.com/in/anuj-sharma-7419562537 ↗
+                </a>
+              </div>
+              <div class="contact-row">
+                <span class="contact-row-label">Live App</span>
+                <a
+                  class="contact-row-val"
+                  href="https://saadaa-b2b-catalog.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  saadaa-b2b-catalog.netlify.app ↗
+                </a>
+              </div>
+              <div class="contact-row">
+                <span class="contact-row-label">Location</span>
+                <span class="contact-row-val">Jaipur, Rajasthan 302022</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© 2026 Anuj Sharma · Built with semantic HTML, CSS &amp; vanilla JS</span>
+        <span>
+          <a href="resume.html">1-Page Resume</a> ·
+          <a href="cv.html">Full 2-Page CV</a> ·
+          Press <kbd>⌘K</kbd> to navigate
+        </span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ======================================================================
+       PROJECT ARCHITECTURE CASE STUDY DRAWER
+       ====================================================================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="drawer-panel" id="projectDrawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" aria-hidden="true">
+    <div class="drawer-header">
+      <span class="project-index" id="drawerIndex">PROJECT 01</span>
+      <button type="button" class="icon-btn" id="closeDrawerBtn" aria-label="Close project details">Close ✕</button>
+    </div>
+    <div class="drawer-body" id="drawerBody"></div>
+    <div class="drawer-footer">
+      <button type="button" class="btn btn--outline btn--sm" id="drawerPrevBtn">← Previous</button>
+      <button type="button" class="btn btn--outline btn--sm" id="drawerNextBtn">Next →</button>
+    </div>
+  </aside>
+
+  <!-- ======================================================================
+       COMMAND PALETTE (⌘K / Ctrl+K)
+       ====================================================================== -->
+  <div class="cmdk-backdrop" id="cmdkBackdrop" role="dialog" aria-modal="true" aria-label="Quick navigation">
+    <div class="cmdk-modal">
+      <div class="cmdk-input-wrap">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" class="cmdk-input" id="cmdkInput" placeholder="Jump to a project, section, resume, or action..." autocomplete="off" />
+        <span class="kbd-hint">ESC</span>
+      </div>
+      <div class="cmdk-list" id="cmdkList"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/portfolio.js"></script>
+</body>
+</html>
